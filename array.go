@@ -11,7 +11,7 @@ func main() {
 	names[2] = "Bilqisthi"
 	// Jika Anda memerlukan koleksi data yang dapat tumbuh atau menyusut, lebih disarankan untuk menggunakan slice. Slice adalah tipe data dinamis yang dibangun di atas array dan dapat diubah ukurannya sesuai kebutuhan.
 	for _, name := range names {
-		fmt.Print(name + "")
+		fmt.Print(name + " ")
 	}
 	fmt.Println()
 
