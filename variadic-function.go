@@ -12,5 +12,7 @@ func sumAll(numbers ...int) int {
 }
 
 func main() {
+	numbers := []int{10, 10, 10, 10}
 	fmt.Println(sumAll(10, 10, 10))
+	fmt.Println(sumAll(numbers...))
 }
