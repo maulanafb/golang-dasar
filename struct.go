@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-struct adalah representasi data
+// struct adalah representasi data
 
 type Customer struct {
 	Name, Address string
