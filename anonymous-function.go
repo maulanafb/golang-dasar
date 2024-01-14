@@ -12,10 +12,17 @@ func registerUser(name string, blacklist Blacklist) {
 	}
 }
 
+func filter(name string) bool {
+	return name == "maulana"
+}
+
 func main() {
 	blacklist := func(name string) bool {
 		return name == "anjing"
 	}
 	registerUser("anjing", blacklist)
-	registerUser("abil", func(name string) bool { return name == "maulana" })
+	registerUser("abil", filter)
+	registerUser("hendri", func(name string) bool {
+		return name == "maulana"
+	})
 }
