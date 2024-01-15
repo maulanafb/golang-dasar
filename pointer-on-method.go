@@ -1,5 +1,7 @@
 package main
 
+// untuk method direkomendasikan selalu menggunakan pointer ( * )
+
 import "fmt"
 
 type Man struct {
